@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="carslist"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title>Car</ion-title>
+    <!-- (click)="deleteCar()" -->
+    <ion-button slot="end" (click)="deleteCar()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="http://www.auroracl.com/template/resources/images/favicon.png" height="250px" />
+    <ion-card-header>
+      <ion-card-title>{{singleCar?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+ {{singleCar?.name}}  {{singleCar?.model}} 
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>
